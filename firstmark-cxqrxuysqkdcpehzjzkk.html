@@ -1,0 +1,674 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FirstMark Insurance Group Dashboard</title>
+<style>
+:root { --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --color-bg:#f7f6f2; --color-panel:#ffffff; --color-fg:#1f1e1b; --color-fg-muted:#6b675e; --color-border-line:#e3e0d7;
+  --color-ok:#2f7d4f; --color-warn:#a2541b; --color-bad:#b3261e;
+  --cds-gap-xs:6px; --cds-gap-sm:10px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:32px;
+  --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:18px; --cds-radius:10px;
+  --cds-font-size-title:30px; --cds-font-size-heading:19px; --cds-font-size-body:15px; --cds-font-size-caption:13px; --cds-font-weight-medium:600;
+  color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --color-bg:#1b1a17; --color-panel:#24231f; --color-fg:#ecebe6; --color-fg-muted:#a6a298; --color-border-line:#3a3832; --color-ok:#5fbf86; --color-warn:#e0955a; --color-bad:#f07a70; color-scheme: dark; } }
+:root[data-theme="dark"] { --color-bg:#1b1a17; --color-panel:#24231f; --color-fg:#ecebe6; --color-fg-muted:#a6a298; --color-border-line:#3a3832; --color-ok:#5fbf86; --color-warn:#e0955a; --color-bad:#f07a70; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 15px; }
+.rose-page { max-width: 1120px; margin: 0 auto; padding: 28px 16px 48px; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head><body><div class="rose-page">
+<script type="application/json" id="rose-data">{"data": {"action_items": {"people": [{"key": "andrew", "section": "leadership", "order": 1, "name": "Andrew Cowan", "role": "Bi-weekly 1:1 with Patrick", "active": "Yes", "match": "andrew cowan|pat/ac|andrew & patrick", "working_on": "2027 producer tiers are set: a $200K minimum for self-servicing agents and $400K for agents with renewal support, tracked annually with a Q3 check-in. Updating budget numbers with realistic projections and limiting the weekly sales pace report to Tier 1 producers.", "as_of": "2026-10-29", "source": "Fathom: Andrew Cowan and Patrick Meet (Oct 29)", "history": "[{\"as_of\": \"2026-10-15\", \"meeting\": \"Andrew Cowan and Patrick Meet\", \"working_on\": \"Quarterly reviews on track. Met with three internal PCG agents to set expectations. Call continued on Teams after audio issues.\"}]"}, {"key": "leadership", "section": "leadership", "order": 2, "name": "FirstMark leadership", "role": "Dave Taylor & Andrew Cowan with Patrick", "active": "Yes", "match": "firstmark leadership|first mark and patrick|growth planning", "working_on": "On Nov 12, Dave and Andrew reviewed Patrick's producer evaluation with him and confirmed the new Tier 1 (Growth) / Tier 2 (Maintenance) structure. They agreed the growth tier needs a more visible sales culture (scoreboards, recognition, and promotions that drive new activity) and a clear long-term career path for top producers. Nolan, Chase and Mikey will be developed as a small high-potential group, including a visit with a top producer at Southern Insurance. Growth agents present their 2027 business plans at the Nov 19 planning session, which Patrick will join.", "as_of": "2026-11-12", "source": "Fathom: First Mark and Patrick (Nov 12); HubSpot emails (Nov 3–12)", "history": "[{\"as_of\": \"2026-10-21\", \"meeting\": \"FirstMark Leadership Call\", \"working_on\": \"Finalized a two-tier retention model launching Nov 2: agents under $400K production handle their own retention; agents at $400K+ get a retention specialist and submit a business plan. Dave to frame it as a partnership and schedule launch meetings for both groups. Coaching for newer producers will center on long-term vision and personal brand. Exploring shared virtual-employee support to lighten a producer's workload. A strong producer candidate is in the pipeline; compensation discussion scheduled.\"}, {\"as_of\": \"2026-10-08\", \"meeting\": \"FirstMark and Patrick Meet\", \"working_on\": \"Introducing a two-path agent career model: Producer (new business focus, full support including a retention specialist, e.g., $360K/yr new premium) and Book Manager (self-managed retention, e.g., $200K/yr). The new 10-lead/week cap is a soft limit to free time for COIs and X-dates; Andrew will coach agents on using that time. Nurture process for leads that don't close: a call after renewal plus a drip campaign. Accountability reframed as helping agents experience success. Producer evaluations reviewed again 10/21.\"}]"}], "recruiting": [{"key": "cl_producer", "order": 1, "role": "Commercial Lines Insurance Producer", "stage": "Active candidates", "hire": "", "notes": "Dave Taylor interviewed Daniel Goodman Oct 20. Patrick sent Dave a recommended offer plan for Ryan on Nov 10, and Ryan remains at the client interview stage. Ethan King had his IPT interview with Zach on Nov 13 and is no longer moving forward (Nov 16). New applicants continue to be screened.", "active": "Yes"}, {"key": "cl_am", "order": 2, "role": "Commercial Lines Account Manager", "stage": "Active candidates", "hire": "", "notes": "Terynn Simpson screened Oct 21. Jacob Beck was presented Nov 10 but FirstMark passed. Two new applicants moved to virtual meets Nov 10–11, and IPT continues screening new applicants (Nov 16).", "active": "Yes"}, {"key": "pl_inside", "order": 3, "role": "Personal Lines Inside Sales", "stage": "Active candidates", "hire": "", "notes": "Zachary Remick screened Oct 15 and interviewed with Dylan, but on Nov 16 Jenni confirmed he has accepted a position elsewhere. Five other candidates are in the pipeline; IPT will forward qualified candidates to Christina after its interviews and research.", "active": "Yes"}], "action_items": [{"key": "t1", "owner": "Andrew Cowan", "task": "Send the weekly sales pace report to Tier 1 producers only", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t2", "owner": "Andrew Cowan", "task": "Update the budget numbers sent to Carrie with realistic projections", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t4", "owner": "Andrew Cowan", "task": "Ask Nolan to design his own new-business process", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t5", "owner": "Dave Taylor", "task": "Finalize retention model assignments (Matt Smith, Mike Donnelly)", "due": "", "active": "Yes", "from": "FirstMark Leadership Call (Oct 21)", "done_on": "", "done_note": ""}, {"key": "t6", "owner": "Andrew Cowan", "task": "Review Patrick's producer evaluation and email comments back to Patrick", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t7", "owner": "Dave Taylor", "task": "Review Patrick's producer evaluation and email comments back to Patrick", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t8", "owner": "Andrew Cowan", "task": "Schedule a follow-up with Patrick on building a new sales culture and career paths", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t9", "owner": "Andrew Cowan", "task": "Review Dan's and Rob's business plans (due Nov 19) to confirm their Tier 1 placement", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t10", "owner": "Andrew Cowan", "task": "Begin gradually reducing Joe's corporate lead cap", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t11", "owner": "Andrew Cowan", "task": "Arrange a meeting for Nolan, Chase and Mikey with Joel at Southern Insurance", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t12", "owner": "Dave Taylor", "task": "Follow up with Matt to define his long-term career path", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t13", "owner": "Dave Taylor", "task": "Follow up with John Korpi to set a 3-year, $5M book growth goal", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}]}, "library": {"files": [{"id": "1zV-oNQulwYMk_1GvdHTILTvFIZQPDiEchBxxvfQsrys", "title": "FirstMark Insurance Leadership Call Agenda", "mimeType": "application/vnd.google-apps.document", "modifiedTime": "2026-11-16T12:39:32.685Z", "viewUrl": "https://docs.google.com/document/d/1zV-oNQulwYMk_1GvdHTILTvFIZQPDiEchBxxvfQsrys/edit?usp=drivesdk"}]}, "meetings": {"results": [{"id": 416276415222, "properties": {"hs_meeting_start_time": "2027-02-04T18:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 416363661013, "properties": {"hs_meeting_start_time": "2027-01-21T18:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 416255685363, "properties": {"hs_meeting_start_time": "2027-01-07T18:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 416363661011, "properties": {"hs_meeting_start_time": "2026-12-24T18:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 416281750237, "properties": {"hs_meeting_start_time": "2026-12-10T18:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 416461598398, "properties": {"hs_meeting_start_time": "2026-11-19T20:00:00Z", "hs_attendee_owner_ids": "87139050", "hubspot_owner_id": "87139050", "hs_meeting_title": "2027 Growth Planning Meeting"}}, {"id": 416646527686, "properties": {"hs_meeting_start_time": "2026-11-12T16:30:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "First Mark and Patrick ", "hs_meeting_outcome": "COMPLETED"}}, {"id": 414253231839, "properties": {"hs_meeting_start_time": "2026-11-05T18:30:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 413484957427, "properties": {"hs_meeting_start_time": "2026-11-04T19:30:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Mathew Smith (First Mark) | Patrick McClure", "hs_meeting_outcome": "COMPLETED"}}, {"id": 412869764806, "properties": {"hs_meeting_start_time": "2026-10-29T17:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet ", "hs_meeting_outcome": "COMPLETED"}}, {"id": 405879824062, "properties": {"hs_meeting_start_time": "2026-10-21T14:30:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "FirstMark Leadership Call"}}, {"id": 408675791597, "properties": {"hs_meeting_start_time": "2026-10-20T16:30:00Z", "hubspot_owner_id": "164569927", "hs_meeting_title": "Dave Taylor interview with Daniel Goodman - Commercial Lines Producer"}}, {"id": 407462972151, "properties": {"hs_meeting_start_time": "2026-10-15T17:00:00Z", "hs_attendee_owner_ids": "87139050", "hubspot_owner_id": "87139050", "hs_meeting_title": "PAT/AC"}}, {"id": 407498801893, "properties": {"hs_meeting_start_time": "2026-10-15T17:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew Cowan and Patrick Meet "}}, {"id": 400754622163, "properties": {"hs_meeting_start_time": "2026-10-13T19:15:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Amanda & Patrick - FirstMark Intro"}}, {"id": 401779734250, "properties": {"hs_meeting_start_time": "2026-10-08T19:15:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Nolan Welfringer and Patrick McClure"}}, {"id": "gcal-36tr2s9m2n7ksjuv5ci0geif93_20261008T170000Z", "properties": {"hs_meeting_start_time": "2026-10-08T17:00:00Z", "hs_meeting_title": "FirstMark and Patrick Meet", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": ""}}, {"id": 401647101678, "properties": {"hs_meeting_start_time": "2026-10-07T19:30:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Gail Welfringer and Patrick McClure"}}, {"id": "gcal-2tl6o0qbbfts3mhf6eff6ajl81", "properties": {"hs_meeting_start_time": "2026-10-06T13:00:00Z", "hs_meeting_title": "Patrick McClure interview with Daniel Goodman - CL Producer (FirstMark)", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": ""}}, {"id": "gcal-6pde6o5air061venulqg58vs8v", "properties": {"hs_meeting_start_time": "2026-10-02T18:30:00Z", "hs_meeting_title": "Ryan True - FirstMark - Commercial Lines Role", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "165899946"}}, {"id": 403983510250, "properties": {"hs_meeting_start_time": "2026-10-01T20:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Andrew & Patrick "}}, {"id": 401485106875, "properties": {"hs_meeting_start_time": "2026-10-01T17:00:00Z", "hubspot_owner_id": "87139050", "hs_meeting_title": "Dan Fortune and Patrick McClure"}}]}, "owners": {"owners": [{"ownerId": 26684738, "name": "Joachim Koch", "isActive": false}, {"ownerId": 87139050, "name": "Patrick McClure", "isActive": true}, {"ownerId": 164569925, "name": "Hunter Dye", "isActive": false}, {"ownerId": 164569926, "name": "Mark McClure", "isActive": true}, {"ownerId": 164569927, "name": "Jenni Farmer", "isActive": true}, {"ownerId": 165899946, "name": "Emily Ballinger", "isActive": true}, {"ownerId": 169105455, "name": "Michele Carbone", "isActive": true}, {"ownerId": 170041932, "name": "Zach Uvodich", "isActive": true}, {"ownerId": 170042000, "name": "Savannah Mills", "isActive": true}]}, "people": {"people": [{"key": "andrew", "section": "leadership", "order": 1, "name": "Andrew Cowan", "role": "Bi-weekly 1:1 with Patrick", "active": "Yes", "match": "andrew cowan|pat/ac|andrew & patrick", "working_on": "2027 producer tiers are set: a $200K minimum for self-servicing agents and $400K for agents with renewal support, tracked annually with a Q3 check-in. Updating budget numbers with realistic projections and limiting the weekly sales pace report to Tier 1 producers.", "as_of": "2026-10-29", "source": "Fathom: Andrew Cowan and Patrick Meet (Oct 29)", "history": "[{\"as_of\": \"2026-10-15\", \"meeting\": \"Andrew Cowan and Patrick Meet\", \"working_on\": \"Quarterly reviews on track. Met with three internal PCG agents to set expectations. Call continued on Teams after audio issues.\"}]"}, {"key": "leadership", "section": "leadership", "order": 2, "name": "FirstMark leadership", "role": "Dave Taylor & Andrew Cowan with Patrick", "active": "Yes", "match": "firstmark leadership|first mark and patrick|growth planning", "working_on": "On Nov 12, Dave and Andrew reviewed Patrick's producer evaluation with him and confirmed the new Tier 1 (Growth) / Tier 2 (Maintenance) structure. They agreed the growth tier needs a more visible sales culture (scoreboards, recognition, and promotions that drive new activity) and a clear long-term career path for top producers. Nolan, Chase and Mikey will be developed as a small high-potential group, including a visit with a top producer at Southern Insurance. Growth agents present their 2027 business plans at the Nov 19 planning session, which Patrick will join.", "as_of": "2026-11-12", "source": "Fathom: First Mark and Patrick (Nov 12); HubSpot emails (Nov 3–12)", "history": "[{\"as_of\": \"2026-10-21\", \"meeting\": \"FirstMark Leadership Call\", \"working_on\": \"Finalized a two-tier retention model launching Nov 2: agents under $400K production handle their own retention; agents at $400K+ get a retention specialist and submit a business plan. Dave to frame it as a partnership and schedule launch meetings for both groups. Coaching for newer producers will center on long-term vision and personal brand. Exploring shared virtual-employee support to lighten a producer's workload. A strong producer candidate is in the pipeline; compensation discussion scheduled.\"}, {\"as_of\": \"2026-10-08\", \"meeting\": \"FirstMark and Patrick Meet\", \"working_on\": \"Introducing a two-path agent career model: Producer (new business focus, full support including a retention specialist, e.g., $360K/yr new premium) and Book Manager (self-managed retention, e.g., $200K/yr). The new 10-lead/week cap is a soft limit to free time for COIs and X-dates; Andrew will coach agents on using that time. Nurture process for leads that don't close: a call after renewal plus a drip campaign. Accountability reframed as helping agents experience success. Producer evaluations reviewed again 10/21.\"}]"}], "recruiting": [{"key": "cl_producer", "order": 1, "role": "Commercial Lines Insurance Producer", "stage": "Active candidates", "hire": "", "notes": "Dave Taylor interviewed Daniel Goodman Oct 20. Patrick sent Dave a recommended offer plan for Ryan on Nov 10, and Ryan remains at the client interview stage. Ethan King had his IPT interview with Zach on Nov 13 and is no longer moving forward (Nov 16). New applicants continue to be screened.", "active": "Yes"}, {"key": "cl_am", "order": 2, "role": "Commercial Lines Account Manager", "stage": "Active candidates", "hire": "", "notes": "Terynn Simpson screened Oct 21. Jacob Beck was presented Nov 10 but FirstMark passed. Two new applicants moved to virtual meets Nov 10–11, and IPT continues screening new applicants (Nov 16).", "active": "Yes"}, {"key": "pl_inside", "order": 3, "role": "Personal Lines Inside Sales", "stage": "Active candidates", "hire": "", "notes": "Zachary Remick screened Oct 15 and interviewed with Dylan, but on Nov 16 Jenni confirmed he has accepted a position elsewhere. Five other candidates are in the pipeline; IPT will forward qualified candidates to Christina after its interviews and research.", "active": "Yes"}], "action_items": [{"key": "t1", "owner": "Andrew Cowan", "task": "Send the weekly sales pace report to Tier 1 producers only", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t2", "owner": "Andrew Cowan", "task": "Update the budget numbers sent to Carrie with realistic projections", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t4", "owner": "Andrew Cowan", "task": "Ask Nolan to design his own new-business process", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t5", "owner": "Dave Taylor", "task": "Finalize retention model assignments (Matt Smith, Mike Donnelly)", "due": "", "active": "Yes", "from": "FirstMark Leadership Call (Oct 21)", "done_on": "", "done_note": ""}, {"key": "t6", "owner": "Andrew Cowan", "task": "Review Patrick's producer evaluation and email comments back to Patrick", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t7", "owner": "Dave Taylor", "task": "Review Patrick's producer evaluation and email comments back to Patrick", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t8", "owner": "Andrew Cowan", "task": "Schedule a follow-up with Patrick on building a new sales culture and career paths", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t9", "owner": "Andrew Cowan", "task": "Review Dan's and Rob's business plans (due Nov 19) to confirm their Tier 1 placement", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t10", "owner": "Andrew Cowan", "task": "Begin gradually reducing Joe's corporate lead cap", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t11", "owner": "Andrew Cowan", "task": "Arrange a meeting for Nolan, Chase and Mikey with Joel at Southern Insurance", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t12", "owner": "Dave Taylor", "task": "Follow up with Matt to define his long-term career path", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t13", "owner": "Dave Taylor", "task": "Follow up with John Korpi to set a 3-year, $5M book growth goal", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}]}, "recruiting": {"people": [{"key": "andrew", "section": "leadership", "order": 1, "name": "Andrew Cowan", "role": "Bi-weekly 1:1 with Patrick", "active": "Yes", "match": "andrew cowan|pat/ac|andrew & patrick", "working_on": "2027 producer tiers are set: a $200K minimum for self-servicing agents and $400K for agents with renewal support, tracked annually with a Q3 check-in. Updating budget numbers with realistic projections and limiting the weekly sales pace report to Tier 1 producers.", "as_of": "2026-10-29", "source": "Fathom: Andrew Cowan and Patrick Meet (Oct 29)", "history": "[{\"as_of\": \"2026-10-15\", \"meeting\": \"Andrew Cowan and Patrick Meet\", \"working_on\": \"Quarterly reviews on track. Met with three internal PCG agents to set expectations. Call continued on Teams after audio issues.\"}]"}, {"key": "leadership", "section": "leadership", "order": 2, "name": "FirstMark leadership", "role": "Dave Taylor & Andrew Cowan with Patrick", "active": "Yes", "match": "firstmark leadership|first mark and patrick|growth planning", "working_on": "On Nov 12, Dave and Andrew reviewed Patrick's producer evaluation with him and confirmed the new Tier 1 (Growth) / Tier 2 (Maintenance) structure. They agreed the growth tier needs a more visible sales culture (scoreboards, recognition, and promotions that drive new activity) and a clear long-term career path for top producers. Nolan, Chase and Mikey will be developed as a small high-potential group, including a visit with a top producer at Southern Insurance. Growth agents present their 2027 business plans at the Nov 19 planning session, which Patrick will join.", "as_of": "2026-11-12", "source": "Fathom: First Mark and Patrick (Nov 12); HubSpot emails (Nov 3–12)", "history": "[{\"as_of\": \"2026-10-21\", \"meeting\": \"FirstMark Leadership Call\", \"working_on\": \"Finalized a two-tier retention model launching Nov 2: agents under $400K production handle their own retention; agents at $400K+ get a retention specialist and submit a business plan. Dave to frame it as a partnership and schedule launch meetings for both groups. Coaching for newer producers will center on long-term vision and personal brand. Exploring shared virtual-employee support to lighten a producer's workload. A strong producer candidate is in the pipeline; compensation discussion scheduled.\"}, {\"as_of\": \"2026-10-08\", \"meeting\": \"FirstMark and Patrick Meet\", \"working_on\": \"Introducing a two-path agent career model: Producer (new business focus, full support including a retention specialist, e.g., $360K/yr new premium) and Book Manager (self-managed retention, e.g., $200K/yr). The new 10-lead/week cap is a soft limit to free time for COIs and X-dates; Andrew will coach agents on using that time. Nurture process for leads that don't close: a call after renewal plus a drip campaign. Accountability reframed as helping agents experience success. Producer evaluations reviewed again 10/21.\"}]"}], "recruiting": [{"key": "cl_producer", "order": 1, "role": "Commercial Lines Insurance Producer", "stage": "Active candidates", "hire": "", "notes": "Dave Taylor interviewed Daniel Goodman Oct 20. Patrick sent Dave a recommended offer plan for Ryan on Nov 10, and Ryan remains at the client interview stage. Ethan King had his IPT interview with Zach on Nov 13 and is no longer moving forward (Nov 16). New applicants continue to be screened.", "active": "Yes"}, {"key": "cl_am", "order": 2, "role": "Commercial Lines Account Manager", "stage": "Active candidates", "hire": "", "notes": "Terynn Simpson screened Oct 21. Jacob Beck was presented Nov 10 but FirstMark passed. Two new applicants moved to virtual meets Nov 10–11, and IPT continues screening new applicants (Nov 16).", "active": "Yes"}, {"key": "pl_inside", "order": 3, "role": "Personal Lines Inside Sales", "stage": "Active candidates", "hire": "", "notes": "Zachary Remick screened Oct 15 and interviewed with Dylan, but on Nov 16 Jenni confirmed he has accepted a position elsewhere. Five other candidates are in the pipeline; IPT will forward qualified candidates to Christina after its interviews and research.", "active": "Yes"}], "action_items": [{"key": "t1", "owner": "Andrew Cowan", "task": "Send the weekly sales pace report to Tier 1 producers only", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t2", "owner": "Andrew Cowan", "task": "Update the budget numbers sent to Carrie with realistic projections", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t4", "owner": "Andrew Cowan", "task": "Ask Nolan to design his own new-business process", "due": "", "active": "Yes", "from": "Andrew Cowan and Patrick (Oct 29)", "done_on": "", "done_note": ""}, {"key": "t5", "owner": "Dave Taylor", "task": "Finalize retention model assignments (Matt Smith, Mike Donnelly)", "due": "", "active": "Yes", "from": "FirstMark Leadership Call (Oct 21)", "done_on": "", "done_note": ""}, {"key": "t6", "owner": "Andrew Cowan", "task": "Review Patrick's producer evaluation and email comments back to Patrick", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t7", "owner": "Dave Taylor", "task": "Review Patrick's producer evaluation and email comments back to Patrick", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t8", "owner": "Andrew Cowan", "task": "Schedule a follow-up with Patrick on building a new sales culture and career paths", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t9", "owner": "Andrew Cowan", "task": "Review Dan's and Rob's business plans (due Nov 19) to confirm their Tier 1 placement", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t10", "owner": "Andrew Cowan", "task": "Begin gradually reducing Joe's corporate lead cap", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t11", "owner": "Andrew Cowan", "task": "Arrange a meeting for Nolan, Chase and Mikey with Joel at Southern Insurance", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t12", "owner": "Dave Taylor", "task": "Follow up with Matt to define his long-term career path", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}, {"key": "t13", "owner": "Dave Taylor", "task": "Follow up with John Korpi to set a 3-year, $5M book growth goal", "due": "", "active": "Yes", "from": "First Mark and Patrick (Nov 12)", "done_on": "", "done_note": ""}]}}, "checks": {}}</script>
+<script>
+/* Stand-in for the Claude dashboard runtime: serves the saved data and runs the page's own drawing code. */
+(function () {
+  const RAW = JSON.parse(document.getElementById('rose-data').textContent);
+  window.SIG = { checks: RAW.checks || {}, db: null, canEdit: false, me: null };
+  const loaders = {}, calcs = {}, draws = {}, cache = {};
+  function get(id) {
+    if (cache[id]) return cache[id];
+    if (calcs[id]) {
+      const c = calcs[id];
+      const args = (c.inputs || []).map((i) => { const v = get(i); return v.status === 'ok' ? v.data : (calcs[i] ? null : []); });
+      try { cache[id] = { status: 'ok', data: c.fn(...args) }; }
+      catch (e) { console.error(id, e); cache[id] = { status: 'error', data: null, message: String(e) }; }
+      return cache[id];
+    }
+    if (Object.prototype.hasOwnProperty.call(RAW.data, id)) {
+      let d = RAW.data[id];
+      if (loaders[id]) {
+        try { d = loaders[id].fn({ answer: d, text: JSON.stringify(d) }); }
+        catch (e) { console.error(id, e); return (cache[id] = { status: 'error', data: [], message: String(e) }); }
+      }
+      return (cache[id] = { status: 'ok', data: d });
+    }
+    return { status: 'missing', data: [] };
+  }
+  function run(name) {
+    const fn = draws[name]; if (!fn) return;
+    document.querySelectorAll('[data-draw="' + name + '"]').forEach((el) => { try { fn(el); } catch (e) { console.error(name, e); } });
+  }
+  window.dash = {
+    data: (id) => Object.assign({ refreshing: false, meta: {} }, get(id)),
+    calc: (id, spec) => { calcs[id] = spec; },
+    loader: (id, spec) => { loaders[id] = spec; },
+    draw: (name, fn) => { if (typeof fn === 'function') draws[name] = fn; else run(name); },
+    onData: (fn) => { try { fn(); } catch (e) { console.error(e); } },
+    refresh: () => {}, params: () => ({}), setParams: () => {}, resetParams: () => {}, setLink: () => {},
+    colors: ['#21418a', '#2f7d4f', '#a2541b', '#8a6d12', '#6b675e'],
+    _runAll: () => Object.keys(draws).forEach(run)
+  };
+})();
+</script>
+
+<style>
+.sig { --sig-acc: #0b5d5b; font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+.sig-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-lg); }
+.sig-logo { background: var(--sig-acc); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); flex: 0 0 auto; }
+.sig-logo img { display: block; width: 210px; max-width: 100%; height: auto; }
+.sig-mono { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--sig-acc); color: #ffffff; font-family: var(--font-anthropic-serif); font-size: 24px; letter-spacing: .02em; }
+.sig-headtext { flex: 1 1 260px; min-width: 0; }
+.sig-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; line-height: 1.15; }
+.sig-sub { margin: 4px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-take { margin: var(--cds-gap-sm) 0 0; font-size: var(--cds-font-size-body); line-height: 1.5; }
+.sig-take b { font-weight: var(--cds-font-weight-medium); }
+.sig-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.sig-nav a { font-size: var(--cds-font-size-caption); color: var(--color-fg); text-decoration: none; border: 1px solid var(--color-border-line); border-radius: 999px; padding: 4px 12px; background: var(--color-panel); }
+.sig-nav a:hover { border-color: var(--color-fg-muted); }
+.sig-sec { display: flex; flex-direction: column; gap: var(--cds-gap-md); scroll-margin-top: 12px; }
+.sig-sec-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cds-gap-sm); border-bottom: 2px solid var(--sig-acc); padding-bottom: var(--cds-pad-sm); }
+.sig-sec-head h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.sig-sec-head p { margin: 2px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sig-toggle .sig-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; overflow: hidden; }
+.sig-toggle button { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 0; padding: 4px 14px; cursor: pointer; }
+.sig-toggle button + button { border-left: 1px solid var(--color-border-line); }
+.sig-toggle button[aria-pressed="true"] { background: var(--sig-acc); color: #ffffff; }
+.sig-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: var(--cds-gap-md); min-height: 80px; }
+.sig-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.sig-card h3 { margin: 0; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+.sig-card .sig-role { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-cardtop { display: flex; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.sig-badge { font-size: 11px; border-radius: 999px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); }
+.sig-badge.on { color: var(--color-ok); border-color: currentColor; }
+.sig-meets { display: grid; grid-template-columns: 1fr 1fr; gap: var(--cds-gap-sm); }
+.sig-meet { border-radius: calc(var(--cds-radius) - 2px); background: var(--color-bg); padding: var(--cds-pad-sm); min-width: 0; }
+.sig-meet .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--color-fg-muted); }
+.sig-meet .when { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; margin-top: 2px; }
+.sig-meet .what, .sig-meet .who { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); overflow-wrap: anywhere; }
+.sig-meet .none { font-size: var(--cds-font-size-caption); color: var(--color-warn); margin-top: 2px; }
+.sig-work { margin: 0; font-size: var(--cds-font-size-caption); line-height: 1.55; }
+.sig-work strong { font-weight: var(--cds-font-weight-medium); }
+.sig-foot { font-size: 11px; color: var(--color-fg-muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.sig-foot a { color: inherit; }
+.sig-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md); border: 1px dashed var(--color-border-line); border-radius: var(--cds-radius); }
+.sig-tablewrap { overflow-x: auto; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); }
+.sig-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.sig-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: 8px 12px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.sig-table td { padding: 10px 12px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.sig-table tr:last-child td { border-bottom: 0; }
+.sig-table td.nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sig-table .overdue { color: var(--color-bad); }
+.sig-stages { display: flex; gap: 4px; flex-wrap: wrap; }
+.sig-stage { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); white-space: nowrap; }
+.sig-stage.done { background: color-mix(in srgb, var(--sig-acc) 18%, transparent); color: var(--color-fg); }
+.sig-stage.now { background: var(--sig-acc); color: #fff; border-color: var(--sig-acc); }
+.sig-origin { font-size: 11px; color: var(--color-fg-muted); }
+.sig-check { display: inline-block; width: 16px; height: 16px; border: 1.5px solid var(--color-fg-muted); border-radius: 4px; line-height: 14px; text-align: center; font-size: 12px; }
+.sig-check.done { background: var(--color-ok); border-color: var(--color-ok); color: #fff; }
+.sig-cb { width: 16px; height: 16px; accent-color: var(--color-ok); cursor: pointer; margin: 0; }
+.sig-table tr.sig-grp td { background: var(--color-bg); font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg); padding-top: 12px; }
+.sig-lib { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: var(--cds-gap-sm); min-height: 40px; }
+.sig-lib li { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.sig-lib a { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-body); text-decoration: none; overflow-wrap: anywhere; }
+.sig-lib a:hover { text-decoration: underline; }
+.sig-lib .meta { font-size: 11px; color: var(--color-fg-muted); }
+.sig-lib li.sig-libempty { grid-column: 1 / -1; border-style: dashed; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-libfolder { color: inherit; }
+.sig-donetask { text-decoration: line-through; color: var(--color-fg-muted); }
+.sig-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.sig-details { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sig-details summary { cursor: pointer; }
+.sig-details ul { margin: 8px 0 0; padding-left: 18px; line-height: 1.6; }
+[data-dash-source-state=refreshing] { opacity: .5; }
+@media (max-width: 420px) { .sig-meets { grid-template-columns: 1fr; } }
+.sig-bullets { margin: 0; padding-left: 18px; font-size: var(--cds-font-size-caption); line-height: 1.5; display: flex; flex-direction: column; gap: 4px; }
+.sig-bullets li::marker { color: var(--color-fg-muted); }
+
+/* frozen section menu */
+.sig-nav { position: sticky; top: 0; z-index: 30; background: var(--color-bg); padding: 10px 0; box-shadow: 0 1px 0 var(--color-border-line); }
+section[id] { scroll-margin-top: 64px; }
+
+/* past notes */
+.sig-hist { font-size: var(--cds-font-size-caption); border-top: 1px dashed var(--color-border-line); padding-top: 6px; }
+.sig-hist summary { cursor: pointer; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+.sig-hist-entry { margin-top: 8px; }
+.sig-hist-date { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--color-fg-muted); margin-bottom: 2px; }
+
+/* frozen logo in the section menu */
+.sig-nav { align-items: center; }
+.sig-navlogo { display: inline-flex; align-items: center; margin-right: 6px; }
+.sig-navlogo:empty { display: none; }
+.sig-navlogo img { display: block; height: 30px; width: auto; max-width: 140px; object-fit: contain; background: var(--sig-acc); border: 1px solid var(--sig-acc); border-radius: 6px; padding: 3px 8px; }
+section[id] { scroll-margin-top: 72px; }
+</style>
+
+<div class="sig">
+  <header class="sig-head" id="top">
+    <div class="sig-logo"><img src="data:image/png;base64,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" alt="FirstMark Insurance Group logo"></div>
+    <div class="sig-headtext">
+      <h1 class="sig-title">FirstMark Insurance Group</h1>
+      <p class="sig-sub">Client dashboard · Impact Performance Team</p>
+    </div>
+  </header>
+
+  <nav class="sig-nav" aria-label="Sections"><span class="sig-navlogo" aria-hidden="true"></span>
+    <a href="#sales" data-nav-sec="sales">Sales</a><a href="#sales-call" data-nav-sec="sales_call">Sales Call</a><a href="#leadership" data-nav-sec="leadership">Leadership</a><a href="#service" data-nav-sec="service">Service &amp; Ops</a><a href="#recruiting">Recruiting</a><a href="#library">Client Library</a><a href="#tasks">Open tasks</a>
+  </nav>
+
+  <section class="sig-sec" id="sales" data-hide-empty="sales">
+    <div class="sig-sec-head">
+      <div><h2>Sales</h2><p>Producers Patrick has met 1:1</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="sales" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="sales-call" data-hide-empty="sales_call">
+    <div class="sig-sec-head">
+      <div><h2>Sales Call</h2><p>Group sales sessions</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="sales_call" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="leadership" data-hide-empty="leadership">
+    <div class="sig-sec-head">
+      <div><h2>Leadership</h2><p>Check-ins with Andrew Cowan and Dave Taylor</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="leadership" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="service" data-hide-empty="service">
+    <div class="sig-sec-head">
+      <div><h2>Service &amp; Ops</h2><p>Service and operations team members Savannah meets with</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="service" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="recruiting">
+    <div class="sig-sec-head">
+      <div><h2>Recruiting</h2><p>Roles IPT is recruiting for</p></div>
+    </div>
+    <div class="sig-tablewrap">
+      <table class="sig-table" data-source="recruiting" data-row-key="key">
+        <thead><tr><th data-field="role">Role</th><th data-field="stage">Stage</th><th data-field="hire">Hire</th><th data-field="notes">Notes</th></tr></thead>
+        <tbody data-draw="recruiting"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sig-sec" id="library">
+    <div class="sig-sec-head">
+      <div><h2>Client Library</h2><p>Files in the shared FirstMark folder in Google Drive</p></div>
+    </div>
+    <ul class="sig-lib" data-draw="library" data-source="library"></ul>
+  </section>
+
+  <section class="sig-sec" id="tasks">
+    <div class="sig-sec-head">
+      <div><h2>Open tasks</h2><p>Andrew Cowan &amp; Dave Taylor</p></div>
+    </div>
+    <div class="sig-tablewrap">
+      <table class="sig-table" data-source="tasks_all" data-row-key="key">
+        <thead><tr><th data-field="active"><span class="sig-sr">Done</span></th><th data-field="task">Task</th><th data-field="due">Due</th><th data-field="from">From</th></tr></thead>
+        <tbody data-draw="tasks"></tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+<script>
+// Rolling window for the HubSpot meeting query: 45 days back, 60 days ahead.
+(function () {
+  const day = 86400000, now = Date.now();
+  const iso = (t) => new Date(t).toISOString().slice(0, 10);
+  const p = dash.params();
+  const since = iso(now - 45 * day), until = iso(now + 60 * day);
+  if (p.since !== since || p.until !== until) dash.setParams({ since, until });
+})();
+
+
+dash.loader('meetings', {
+  description: 'Flattens each HubSpot meeting record into one row of its properties.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    if (!a || !Array.isArray(a.results)) throw new Error('HubSpot returned no results list');
+    return a.results.map((r) => Object.assign({ id: String(r.id) }, r.properties || {}));
+  }
+});
+
+dash.loader('owners', {
+  description: 'Turns the HubSpot owners list into rows of owner id and name.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    const list = (a && a.owners) || [];
+    return list.map((o) => ({ ownerId: String(o.ownerId), name: o.name, isActive: o.isActive }));
+  }
+});
+
+dash.loader('library', {
+  description: 'Turns the Google Drive file list into rows of title, type, last modified and link.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    const files = (a && Array.isArray(a.files)) ? a.files : [];
+    return files.map((f) => ({ id: String(f.id), title: f.title || '', mimeType: f.mimeType || '', modifiedTime: f.modifiedTime || '', viewUrl: f.viewUrl || '' }));
+  }
+});
+
+
+['people', 'recruiting', 'action_items'].forEach((key) => {
+  dash.loader(key, {
+    description: 'Reads the ' + key + ' list from the notes file.',
+    fn: ({ answer }) => {
+      let a = answer;
+      if (typeof a === 'string') { a = JSON.parse(a); }
+      if (!a || !Array.isArray(a[key])) throw new Error('The notes file has no ' + key + ' list');
+      return a[key];
+    }
+  });
+});
+
+dash.calc('roster', {
+  inputs: ['people', 'meetings', 'owners'],
+  title: 'People with last and next IPT meeting',
+  description: 'Each person or group from the notes, with their latest past and earliest upcoming HubSpot meeting whose title matches them (and, where set, that includes the IPT owner).',
+  fn: (people, meetings, owners) => {
+    const names = {};
+    owners.forEach((o) => { names[o.ownerId] = o.name; });
+    const now = Date.now();
+    const skip = { CANCELED: 1, NO_SHOW: 1, RESCHEDULED: 1 };
+    return people.map((p) => {
+      const words = String(p.match || '').split('|').map((w) => w.trim().toLowerCase()).filter(Boolean);
+      const hits = meetings.filter((m) => {
+        const title = String(m.hs_meeting_title || '').toLowerCase();
+        if (!words.some((w) => title.includes(w))) return false;
+        if (skip[m.hs_meeting_outcome]) return false;
+        if (p.ipt_owner) {
+          const ids = [m.hubspot_owner_id].concat(String(m.hs_attendee_owner_ids || '').split(';'));
+          if (!ids.includes(String(p.ipt_owner))) return false;
+        }
+        return true;
+      }).map((m) => {
+        const ids = [m.hubspot_owner_id].concat(String(m.hs_attendee_owner_ids || '').split(';')).filter(Boolean);
+        const who = [...new Set(ids)].map((i) => names[i]).filter(Boolean).join(', ');
+        return { t: Date.parse(m.hs_meeting_start_time), title: String(m.hs_meeting_title || '').trim(), who };
+      }).filter((m) => !isNaN(m.t));
+      const past = hits.filter((m) => m.t <= now).sort((a, b) => b.t - a.t)[0];
+      const next = hits.filter((m) => m.t > now).sort((a, b) => a.t - b.t)[0];
+      return {
+        key: p.key, section: p.section, order: Number(p.order), name: p.name, role: p.role, active: p.active,
+        last_date: past ? new Date(past.t).toISOString() : (p.fallback_last_date || ''),
+        last_title: past ? past.title : (p.fallback_last_title || ''),
+        last_with: past ? past.who : (p.fallback_last_with || ''),
+        last_from: past ? 'HubSpot' : 'notes',
+        next_date: next ? new Date(next.t).toISOString() : (meetings.length ? '' : (p.fallback_next_date || '')),
+        next_title: next ? next.title : (meetings.length ? '' : (p.fallback_next_title || '')),
+        next_with: next ? next.who : (meetings.length ? '' : (p.fallback_next_with || '')),
+        next_from: next ? 'HubSpot' : 'notes',
+        working_on: p.working_on, as_of: p.as_of, history: (typeof p.history === 'string' ? p.history : JSON.stringify(p.history || [])), source: p.source, hubspot_id: p.hubspot_id || '',
+        hits: JSON.stringify(hits)
+      };
+    });
+  }
+});
+
+dash.calc('tasks_all', {
+  inputs: ['action_items'],
+  title: "FirstMark team tasks",
+  description: "Action items for FirstMark team members from recent call recaps. IPT team tasks are left out.",
+  fn: (action_items) => action_items.map((a) => ({
+    key: a.key, owner: a.owner, task: a.task, due: a.due || '', active: a.active, from: a.from,
+    done_on: a.done_on || '', done_note: a.done_note || ''
+  }))
+});
+
+dash.calc('summary', {
+  inputs: ['roster', 'tasks_all'],
+  title: 'Headline: next touchpoint and open tasks',
+  description: 'The earliest upcoming IPT meeting across active people and groups.',
+  fn: (roster, tasks_all) => {
+    const upcoming = (roster || []).filter((r) => r.active === 'Yes' && r.next_date)
+      .sort((a, b) => Date.parse(a.next_date) - Date.parse(b.next_date))[0];
+    return [{
+      next_title: upcoming ? upcoming.next_title : '',
+      next_date: upcoming ? upcoming.next_date : ''
+    }];
+  }
+});
+</script>
+
+<script>
+(function () {
+  for (const a of document.querySelectorAll('.sig-nav a')) {
+    a.addEventListener('click', () => dash.setLink(a.getAttribute('href').slice(1)));
+  }
+})();
+
+
+dash.onData(() => {
+  const r = dash.data('roster');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) return;
+  const has = (sec) => r.data.some((x) => x.section === sec && x.active === 'Yes');
+  for (const s of document.querySelectorAll('[data-hide-empty]')) s.hidden = !has(s.getAttribute('data-hide-empty'));
+  for (const a of document.querySelectorAll('[data-nav-sec]')) a.hidden = !has(a.getAttribute('data-nav-sec'));
+});
+
+/* Split each person's meetings into last and next at the moment the page is drawn, so a meeting moves to "last" as soon as its start time passes. */
+window.sigNow = function (x) {
+  let hits = [];
+  try { hits = JSON.parse(x.hits || '[]'); } catch (e) { hits = []; }
+  if (!hits.length) return x;
+  const now = Date.now();
+  const past = hits.filter((m) => m.t <= now).sort((a, b) => b.t - a.t)[0];
+  const next = hits.filter((m) => m.t > now).sort((a, b) => a.t - b.t)[0];
+  const y = Object.assign({}, x);
+  if (past) { y.last_date = new Date(past.t).toISOString(); y.last_title = past.title; y.last_with = past.who; }
+  y.next_date = next ? new Date(next.t).toISOString() : '';
+  y.next_title = next ? next.title : '';
+  y.next_with = next ? next.who : '';
+  return y;
+};
+setInterval(() => dash.draw('cards'), 5 * 60 * 1000);
+
+window.sigFmt = function (v) {
+  if (!v) return '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return d3.utcFormat('%a %b %-d')(new Date(v + 'T00:00:00Z'));
+  const d = new Date(v);
+  return isNaN(d) ? v : d3.timeFormat('%a %b %-d · %-I:%M %p')(d);
+};
+window.sigFmtDay = function (v) {
+  if (!v) return '';
+  return d3.utcFormat('%b %-d')(new Date(v.slice(0, 10) + 'T00:00:00Z'));
+};
+
+function sigMark(el, source, field, key) {
+  el.setAttribute('data-source', source);
+  el.setAttribute('data-field', field);
+  el.setAttribute('data-where', 'key=' + encodeURIComponent(key));
+  return el;
+}
+window.sigMark = sigMark;
+
+function sigEl(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+window.sigEl = sigEl;
+
+
+window.sigPast = function (raw) {
+  let h = raw;
+  for (let i = 0; i < 3 && typeof h === 'string'; i++) { try { h = JSON.parse(h || '[]'); } catch (e) { h = []; } }
+  if (!Array.isArray(h)) return null;
+  h = h.filter((e) => e && (e.working_on || e.notes)).sort((a, b) => String(b.as_of || '').localeCompare(String(a.as_of || '')));
+  if (!h.length) return null;
+  const det = sigEl('details', 'sig-hist');
+  det.append(sigEl('summary', null, 'Past notes (' + h.length + ')'));
+  h.forEach((e) => {
+    const blk = sigEl('div', 'sig-hist-entry');
+    blk.append(sigEl('div', 'sig-hist-date', (e.meeting ? e.meeting + ' · ' : '') + (window.sigFmt(e.as_of) || '')));
+    const ul = sigEl('ul', 'sig-bullets');
+    String(e.working_on || e.notes || '').split(/\n|(?<=[.!?])\s+(?=[A-Z0-9$(“"])/).map((s) => s.replace(/^[•\-\s]+/, '').trim()).filter(Boolean).forEach((s) => ul.append(sigEl('li', null, s)));
+    blk.append(ul);
+    det.append(blk);
+  });
+  return det;
+};
+
+dash.draw('cards', (el) => {
+  const sec = el.getAttribute('data-sec');
+  const r = dash.data('roster');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) {
+    el.replaceChildren();
+    if (r.status === 'loading') { el.classList.add('dash-skeleton'); }
+    else { el.classList.remove('dash-skeleton'); el.append(sigEl('div', 'sig-empty', r.status === 'connect' ? 'Waiting for HubSpot access…' : 'Failed to load')); }
+    return;
+  }
+  el.classList.remove('dash-skeleton');
+  const want = 'Yes';
+  const rows = r.data.filter((x) => x.section === sec && x.active === want).sort((a, b) => a.order - b.order);
+  if (!rows.length) {
+    el.replaceChildren(sigEl('div', 'sig-empty', want === 'Yes' ? 'No active entries in this section.' : 'No inactive entries in this section.'));
+    return;
+  }
+  const cards = rows.map((x0) => {
+    const x = window.sigNow(x0);
+    const c = sigEl('article', 'sig-card');
+    c.id = 'card-' + x.key;
+    const top = sigEl('div', 'sig-cardtop');
+    const head = sigEl('div');
+    head.append(sigMark(sigEl('h3', null, x.name), 'roster', 'name', x.key));
+    head.append(sigMark(sigEl('p', 'sig-role', x.role), 'roster', 'role', x.key));
+    top.append(head);
+    c.append(top);
+
+    const meets = sigEl('div', 'sig-meets');
+    [['last', 'Last IPT meeting'], ['next', 'Next IPT meeting']].forEach(([k, label]) => {
+      const m = sigEl('div', 'sig-meet');
+      m.append(sigEl('div', 'lbl', label));
+      if (x[k + '_date']) {
+        m.append(sigMark(sigEl('div', 'when', window.sigFmt(x[k + '_date'])), 'roster', k + '_date', x.key));
+        m.append(sigMark(sigEl('div', 'what', x[k + '_title']), 'roster', k + '_title', x.key));
+        if (x[k + '_with']) {
+          const w = sigEl('div', 'who', 'with ');
+          w.append(sigMark(sigEl('span', null, x[k + '_with']), 'roster', k + '_with', x.key));
+          m.append(w);
+        }
+      } else {
+        m.append(sigEl('div', 'none', k === 'next' ? 'None scheduled' : 'None found'));
+      }
+      meets.append(m);
+    });
+    c.append(meets);
+
+    const lines = String(x.working_on || '').split(/\n|(?<=[.!?])\s+(?=[A-Z0-9$(“"])/).map((s) => s.replace(/^[•\-\s]+/, '').trim()).filter(Boolean);
+    if (lines.length) {
+      const ul = sigMark(sigEl('ul', 'sig-bullets'), 'roster', 'working_on', x.key);
+      lines.forEach((s) => ul.append(sigEl('li', null, s)));
+      c.append(ul);
+    }
+
+    const past = window.sigPast(x.history);
+    if (past) c.append(past);
+    const foot = sigEl('div', 'sig-foot');
+    const asof = sigEl('span', null, 'Notes as of ');
+    asof.append(sigMark(sigEl('span', null, window.sigFmt(x.as_of)), 'roster', 'as_of', x.key));
+    foot.append(asof);
+    c.append(foot);
+    return c;
+  });
+  el.replaceChildren(...cards);
+});
+
+window.SIG = window.SIG || { checks: {}, db: null, canEdit: false, me: null };
+window.sigIsDone = function (x) {
+  const c = window.SIG.checks[x.key];
+  return c && typeof c.done === 'boolean' ? c.done : x.active === 'No';
+};
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  const db = await window.claude.use('db');
+  if (!db) return;
+  const user = await window.claude.use('user');
+  window.SIG.db = db;
+  window.SIG.canEdit = user ? (await user.canEdit()) === true : false;
+  window.SIG.me = user ? await user.id() : null;
+  db.collection('task_checks').onSnapshot((snap) => {
+    const next = {};
+    for (const doc of snap.docs) next[doc.id] = doc.data();
+    window.SIG.checks = next;
+    dash.draw('tasks');
+  }, () => {});
+  dash.draw('tasks');
+})();
+
+const SIG_KIND = (m) => /folder/.test(m) ? 'Folder' : /document/.test(m) ? 'Doc' : /spreadsheet|excel|sheet/.test(m) ? 'Sheet' : /presentation|powerpoint/.test(m) ? 'Slides' : /pdf/.test(m) ? 'PDF' : /image/.test(m) ? 'Image' : 'File';
+dash.draw('library', (ul) => {
+  const r = dash.data('library');
+  if (r.status === 'loading') { ul.replaceChildren(); return; }
+  const item = (f) => {
+    const li = sigEl('li');
+    const a = sigEl('a', null, f.title);
+    a.href = f.viewUrl; a.target = '_blank'; a.rel = 'noopener';
+    a.setAttribute('data-source', 'library'); a.setAttribute('data-field', 'title'); a.setAttribute('data-where', 'id=' + encodeURIComponent(f.id));
+    li.append(a);
+    li.append(sigEl('span', 'meta', SIG_KIND(f.mimeType) + (f.modifiedTime ? ' · updated ' + window.sigFmtDay(f.modifiedTime) : '')));
+    return li;
+  };
+  const out = r.status === 'ok' ? r.data.map(item) : [];
+  if (!out.length) {
+    out.push(sigEl('li', 'sig-libempty', r.status === 'ok' ? 'Nothing has been shared in the client folder yet.' : (r.status === 'connect' ? 'Waiting for Google Drive access…' : 'Failed to load')));
+  }
+  ul.replaceChildren(...out);
+});
+
+const SIG_STAGES = ['Active candidates', 'Onboarding', 'Role filled'];
+
+dash.draw('recruiting', (tb) => {
+  const r = dash.data('recruiting');
+  if (r.status !== 'ok') {
+    tb.replaceChildren();
+    if (r.status !== 'loading') { const tr = sigEl('tr'); const td = sigEl('td', null, 'Failed to load'); td.colSpan = 4; tr.append(td); tb.append(tr); }
+    return;
+  }
+  const want = 'Yes';
+  const rows = r.data.filter((x) => x.active === want).sort((a, b) => Number(a.order) - Number(b.order));
+  if (!rows.length) {
+    const tr = sigEl('tr'); const td = sigEl('td', 'sig-origin', want === 'Yes' ? "No open FirstMark roles right now." : 'No inactive roles.'); td.colSpan = 4; tr.append(td);
+    tb.replaceChildren(tr);
+    return;
+  }
+  tb.replaceChildren(...rows.map((x) => {
+    const tr = sigEl('tr'); tr.setAttribute('data-key', encodeURIComponent(x.key));
+    tr.append(sigEl('td', null, x.role));
+    const st = sigEl('td');
+    const at = SIG_STAGES.indexOf(x.stage);
+    st.append(sigEl('span', 'sig-stage' + (at < 0 ? '' : ' now'), at < 0 ? 'Not launched' : x.stage));
+    tr.append(st);
+    tr.append(sigEl('td', null, x.hire || '—'));
+    tr.append(sigEl('td', null, x.notes));
+    return tr;
+  }));
+});
+
+dash.draw('tasks', (tb) => {
+  const r = dash.data('tasks_all');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) {
+    tb.replaceChildren();
+    if (r.status !== 'loading') { const tr = sigEl('tr'); const td = sigEl('td', null, 'Failed to load'); td.colSpan = 4; tr.append(td); tb.append(tr); }
+    return;
+  }
+  const want = 'Yes';
+  const SIG_TASK_OWNERS = [...new Set(r.data.map((x) => x.owner))];
+  const today = new Date().toISOString().slice(0, 10);
+  const S = window.SIG;
+  /* completed tasks stay visible for one week after they were checked off, then drop off; open tasks always stay */
+  const cut = new Date(); cut.setUTCHours(0, 0, 0, 0); cut.setUTCDate(cut.getUTCDate() - 7);
+  const showTask = (x) => {
+    if (!window.sigIsDone(x)) return want === 'Yes';
+    const c = S.checks[x.key];
+    const doneOn = c && c.done && c.doneAt ? c.doneAt : x.done_on;
+    return !!doneOn && new Date(String(doneOn).slice(0, 10)) >= cut;
+  };
+  const rows = r.data.filter((x) => SIG_TASK_OWNERS.includes(x.owner) && showTask(x)).sort((a, b) =>
+    SIG_TASK_OWNERS.indexOf(a.owner) - SIG_TASK_OWNERS.indexOf(b.owner) || (window.sigIsDone(a) - window.sigIsDone(b)) || String(a.due || '9999').localeCompare(String(b.due || '9999')));
+  if (!rows.length) {
+    const tr = sigEl('tr'); const td = sigEl('td', 'sig-origin', want === 'Yes' ? 'No open tasks.' : 'No completed tasks yet.'); td.colSpan = 4; tr.append(td);
+    tb.replaceChildren(tr);
+    return;
+  }
+  let lastOwner = null;
+  tb.replaceChildren(...rows.flatMap((x) => {
+    const out = [];
+    if (x.owner !== lastOwner) {
+      lastOwner = x.owner;
+      const g = sigEl('tr', 'sig-grp'); const gd = sigEl('td', null, x.owner); gd.colSpan = 4; g.append(gd);
+      out.push(g);
+    }
+    const done = window.sigIsDone(x);
+    const chk = S.checks[x.key];
+    const tr = sigEl('tr'); tr.setAttribute('data-key', encodeURIComponent(x.key));
+    const ck = sigEl('td');
+    if (S.canEdit && S.db) {
+      const box = document.createElement('input');
+      box.type = 'checkbox'; box.className = 'sig-cb'; box.checked = done;
+      box.setAttribute('aria-label', (done ? 'Mark open: ' : 'Mark done: ') + x.task);
+      box.addEventListener('change', async () => {
+        const body = box.checked
+          ? { done: true, doneAt: new Date().toISOString(), doneBy: S.me || null }
+          : { done: false, doneAt: null, doneBy: S.me || null };
+        const prev = S.checks[x.key];
+        S.checks = Object.assign({}, S.checks, { [x.key]: body });
+        dash.draw('tasks');
+        try { await S.db.doc('task_checks/' + x.key).set(body); }
+        catch (e) { S.checks = Object.assign({}, S.checks, { [x.key]: prev }); dash.draw('tasks'); }
+      });
+      ck.append(box);
+    } else {
+      const box = sigEl('span', 'sig-check' + (done ? ' done' : ''), done ? '✓' : '');
+      box.setAttribute('role', 'img'); box.setAttribute('aria-label', done ? 'Completed' : 'Open');
+      ck.append(box);
+    }
+    tr.append(ck);
+    const task = sigEl('td');
+    task.append(sigEl('div', done ? 'sig-donetask' : null, x.task));
+    const doneOn = chk && chk.done && chk.doneAt ? chk.doneAt : x.done_on;
+    const doneNote = chk && chk.done ? '' : x.done_note;
+    if (done && (doneOn || doneNote)) {
+      task.append(sigEl('div', 'sig-origin', 'Done' + (doneOn ? ' ' + window.sigFmtDay(doneOn) : '') + (doneNote ? ': ' + doneNote : '')));
+    }
+    tr.append(task);
+    tr.append(sigEl('td', 'nowrap' + (!done && x.due && x.due < today ? ' overdue' : ''), x.due ? window.sigFmtDay(x.due) : '—'));
+    tr.append(sigEl('td', 'sig-origin', x.from));
+    out.push(tr);
+    return out;
+  }));
+});
+
+dash.draw('next_title', (el) => {
+  const s = dash.data('summary');
+  el.textContent = s.status === 'ok' && s.data && s.data[0] && s.data[0].next_title ? s.data[0].next_title : '—';
+});
+dash.draw('next_date', (el) => {
+  const s = dash.data('summary');
+  el.textContent = s.status === 'ok' && s.data && s.data[0] && s.data[0].next_date ? window.sigFmt(s.data[0].next_date) : '—';
+});
+</script>
+
+<script>
+(function () {
+  const slot = document.querySelector('.sig-navlogo');
+  const box = document.querySelector('.sig-head .sig-logo');
+  if (!slot || !box) return;
+  const sync = () => {
+    const img = box.querySelector('img');
+    if (!img || !img.getAttribute('src')) return;
+    const cur = slot.querySelector('img');
+    if (cur && cur.getAttribute('src') === img.getAttribute('src')) return;
+    const c = document.createElement('img');
+    c.src = img.getAttribute('src');
+    c.alt = '';
+    slot.replaceChildren(c);
+  };
+  sync();
+  new MutationObserver(sync).observe(box, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] });
+})();
+</script>
+
+<script>dash._runAll();</script>
+</div></body></html>
